@@ -193,16 +193,4 @@ shinyServer(function(input, output, session) {
       )
     datatable(df, rownames = FALSE, options = list(pageLength = 10, dom = "tip"))
   })
-
-  # ---- Nedladdning ----
-
-  output$export_excel <- downloadHandler(
-    filename = function() "digidel_enkatresultat.xlsx",
-    content  = function(file) writexl::write_xlsx(digidel_data, file)
-  )
-
-  output$export_excel_urval <- downloadHandler(
-    filename = function() "digidel_enkatresultat_urval.xlsx",
-    content  = function(file) writexl::write_xlsx(urval(), file)
-  )
 })

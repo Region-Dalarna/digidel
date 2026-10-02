@@ -6,6 +6,5 @@ library(sf)
 library(dbplyr)
 library(shiny.telemetry)
 library(leaflet)
-library(writexl)
 library(systemfonts)
 # ... lägg till fler paket vid behov

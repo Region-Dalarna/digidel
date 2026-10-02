@@ -6,7 +6,7 @@
    kan överstyra den delade identiteten vid behov.
    ============================================================ */
 
-/* ---- Globala knappar (downloadButton m.fl.) ---- */
+/* ---- Globala knappar ---- */
 .btn-default,
 .shiny-download-link.btn,
 .btn.btn-light {
@@ -121,29 +121,6 @@
   margin: 6px 0 4px 0;
 }
 .karta-layout .dataTables_wrapper { font-size: 13px; }
-
-/* ---- Nedladdningsknappar ---- */
-.karta-layout .karta-knapp {
-  margin-top: 10px;
-  display: flex;
-  gap: 6px;
-}
-.karta-layout .karta-knapp .btn {
-  flex: 1;
-  width: auto;
-  background-color: var(--rd-primary);
-  color: #fff;
-  border-color: var(--rd-primary-dark);
-  font-weight: 500;
-  padding: 8px 10px;
-  font-size: 13px;
-  white-space: normal;
-  line-height: 1.2;
-}
-.karta-layout .karta-knapp .btn:hover {
-  background-color: var(--rd-primary-dark);
-  color: #fff;
-}
 
 /* ---- Nyckeltal (KPI-rutor) ---- */
 .nyckeltal { display: flex; gap: 12px; flex-wrap: wrap; margin-bottom: 14px; }

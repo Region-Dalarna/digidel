@@ -31,14 +31,10 @@ shinyUI(
         div(class = "karta-layout",
           uiOutput("nyckeltal"),
           fluidRow(
-            # Vänster: kartan + nedladdningsknappar
+            # Vänster: kartan
             column(
               width = 4,
-              leafletOutput("karta_digidel", height = "70vh"),
-              div(class = "karta-knapp",
-                  downloadButton("export_excel", "Hela datasetet", icon = icon("download")),
-                  downloadButton("export_excel_urval", "Aktuellt urval", icon = icon("download"))
-              )
+              leafletOutput("karta_digidel", height = "70vh")
             ),
             # Höger: frågeval överst, stapeldiagram och tabell under
             column(

@@ -12,7 +12,6 @@ library(ggplot2)
 library(rdshinyappar)
 library(leaflet)
 library(sf)
-library(writexl)
 
 # hjälpfunktioner i R/ (Shiny laddar dem automatiskt, men vi gör det explicit så att ordningen blir tydlig)
 for (fil in list.files("R", pattern = "\\.R$", full.names = TRUE)) source(fil, encoding = "utf-8")
