@@ -1,5 +1,7 @@
 source('global.R')
 
+APP_BESKRIVNING <- 'Karta och diagram som visualiserar enkätsvar för digital delaktighet på biblioteken i Sverige.'
+
 shinyUI(
   fluidPage(
     tags$head(
