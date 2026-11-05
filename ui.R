@@ -4,6 +4,7 @@ APP_BESKRIVNING <- 'Karta och diagram som visualiserar enkätsvar för digital d
 
 shinyUI(
   fluidPage(
+    title = APP_TITEL,  # webbläsarflikens rubrik
     tags$head(
       tags$title(APP_TITEL),
       tags$link(rel = 'icon', type = 'image/x-icon', href = 'favicon.ico'),
