@@ -18,7 +18,7 @@ shinyServer(function(input, output, session) {
   output$karta_digidel <- renderLeaflet({
     bbox <- sf::st_bbox(lan_sf)
     leaflet() |>
-      lagg_till_bakgrundskarta() |>
+      lagg_till_bakgrundskarta(etiketter = FALSE) |>
       fitBounds(bbox[["xmin"]], bbox[["ymin"]], bbox[["xmax"]], bbox[["ymax"]]) |>
       addEasyButton(
         easyButton(
